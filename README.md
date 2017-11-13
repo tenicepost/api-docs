@@ -14,10 +14,10 @@ ___
   2.2. [Testing](#id-test)
 
 #### Intro<a id="id-intro"></a>
-The API for authentication and authorization provides you the authentication key to enable the use of all the DHL-endpoints that are secured.
-In the  [API docs ](https://api-gw.dhlparcel.nl/docs/#/)   a lock <span>&#x1F512;</span> is showen on the right hand side of the endpoint to identify a secured endpoint.
+The API for authentication and authorization provides you the authentication key which enables the use of all the DHL-endpoints that are secured.
+In the  [API docs ](https://api-gw.dhlparcel.nl/docs/#/) a lock <span>&#x1F512;</span> is showen on the right hand side of the endpoint to identify a secured endpoint.
 
-We use JWT for authentication. The JWT token is provided in the Authorization header using the bearer scheme.
+The DHL APIs implement the JWT for secure authentication and authorization. The JWT token is to be provided in the Authorization header using the bearer scheme.
 The api-gateway checks performs the following checks on the token for secured services:
 
 - Signature is correct(using HMAC SHA-256 symmetric key).
@@ -134,5 +134,5 @@ Response 401:
 
 Suggested Test Cases 	| Expected Result
 --------------------------  |---------------------------
-Create an authorization key  | An new user-id and key created with given user-d and key from the My DHLParcel application.
-Create an authorization key | Create a new authorization key by using the refresh token
+Create an authorization token (initial request) | An access token and a refresh token with expiration are returned by the My DHLParcel application.
+Create an new authorization with refreh token| An access token and a refresh token with expiration are returned by the My DHLParcel application.
