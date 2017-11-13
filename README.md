@@ -1,5 +1,5 @@
 ## API Authentication and authorization
---------
+
 #### [Intro](#id-intro)
 
 [Pre conditions](#id-pre)
@@ -12,6 +12,8 @@
     2.1.1. [Examples - request code](#id-exmp)<br />
     2.1.2. [Response codes](#id-res)<br />
   2.2. [Testing](#id-test)
+
+--------
 
 #### Intro<a id="id-intro"></a>
 The API for authentication and authorization provides you the authentication key which enables the use of all the DHL-endpoints that are secured.
