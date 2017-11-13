@@ -5,13 +5,13 @@ ___
 [Pre conditions](#id-pre)
 
 1. [Steps](#id-steps)
-  1.1 [Get your user-id and key](#id-steps1)
-  1.2 [Get your authorisation token](#id-steps2)
+  1.1.  [Get your user-id and key](#id-steps1)
+  1.2.  [Get your authorisation token](#id-steps2)
 2.  [Environment and testing](#id-env)
-  2.1 [Environments](#id-env-tst)
-    2.1.1 [Examples - request code](#id-exmp)
-    2.1.2 [Response codes](#id-res)
-  2.2 [Testing](#id-test)
+  2.1. [Environments](#id-env-tst)
+    2.1.1. [Examples - request code](#id-exmp)
+    2.1.2. [Response codes](#id-res)
+  2.2. [Testing](#id-test)
 
 #### Intro<a id="id-intro"></a>
 The API for authentication and authorization provides you the authentication key to enable the use of all the DHL-endpoints that are secured.
@@ -73,17 +73,17 @@ API to get your tokens| https://api-gw-accept.dhlparcel.nl/authenticate/api-key 
 
 ***cURL***
 ##### Access token:
-'''
+```
 curl -X POST "https://api-gw.dhlparcel.nl/authenticate/api-key" -H "accept: application/json" -H "content-type: application/json" -d "{ \"userId\": \"6bfc7561-4b41-4cb7-a1c3-dc31faf860db\", \"key\": \"8babb742-1d75-4014-bb82-aa3f459aa4b3\"}
-'''
+```
 
 ##### Refresh token:
-'''
+```
 curl -X POST "https://api-gw.dhlparcel.nl/authenticate/refresh-token" -H "accept: application/json" -H "content-type: application/json" -d "{ \"refreshToken\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwMWVlYjBkMy1hZmM0LTRiYjEtYTgzZS0wZDkxYzE4ZjVhZDUiLCJzdWIiOiI2YmZjNzU2MS00YjQxLTRjYjctYTFjMy1kYzMxZmFmODYwZGIiLCJvcmdhbml6YXRpb25JZCI6ImE0MDkzM2RlLWJkMTctNDk0NC1iN2U5LTIzZmM3ZWU5YzgzNSIsIm5iZiI6MTUxMDIxMDcxNSwiZXhwIjoxNTEwODE1NTE2LCJyb2xlcyI6WyJhdXRoLXNlcnZpY2UuUkVGUkVTSCJdLCJhY2NvdW50cyI6WyIwODUwMDAwMSJdfQ.y-Hm3T6_moUWXF_v2uyOXcX7tu1uddyhG6fsDQliPXw\"}
-'''
+```
 
 ***PHP***
-'''php
+```php
 <?php
 $auth_string = '{"userId":"{userID}","key":"{key}"}';
 $ch = curl_init('https://api-gw.dhlparcel.nl/authenticate/api-key');  <span style="color:red"> **//test environment**</span>
@@ -95,10 +95,10 @@ $auth_response = curl_exec($ch);
 $api_key = json_decode($auth_response);
 $accessToken = $api_key->{'accessToken'};
 ?>
-'''
+```
 
 ***Javascript*** ***using AJAX***
-'''Javascript
+```Javascript
        $.ajax ({
           type:"POST",
           data: JSON.stringify({userId: "user-id", key: "key"}),
@@ -112,17 +112,17 @@ $accessToken = $api_key->{'accessToken'};
               console.log(parsed_json.accessToken + ", " + parsed_json.refreshToken);
           }
         });
-'''
+```
 
 ##### 2.1.2 Responses codes <a id="id-res"></a>
 Response 200:
 
-'''
-  "accessToken": "_Your API key_"
-  "accessTokenExpiration": 1510138597,
-  "refreshToken":  "_Your refresh API key _"
-   "refreshTokenExpiration": 1510742497
-'''
+```
+  { "accessToken": "_Your API key_"
+    "accessTokenExpiration": 1510138597,
+    "refreshToken":  "_Your refresh API key _"
+    "refreshTokenExpiration": 1510742497 }
+```
 
 Response 400:
 >	userId or key not provided
