@@ -5,12 +5,12 @@ ___
 [Pre conditions](#id-pre)
 
 1. [Steps](#id-steps)<br />
-  1.1.  [Get your user-id and key](#id-steps1)
-  1.2.  [Get your authorisation token](#id-steps2)
-2.  [Environment and testing](#id-env)
-  2.1. [Environments](#id-env-tst)
-    2.1.1. [Examples - request code](#id-exmp)
-    2.1.2. [Response codes](#id-res)
+  1.1.  [Get your user-id and key](#id-steps1)<br />
+  1.2.  [Get your authorisation token](#id-steps2)<br />
+2.  [Environment and testing](#id-env)<br />
+  2.1. [Environments](#id-env-tst)<br />
+    2.1.1. [Examples - request code](#id-exmp)<br />
+    2.1.2. [Response codes](#id-res)<br />
   2.2. [Testing](#id-test)
 
 #### Intro<a id="id-intro"></a>
