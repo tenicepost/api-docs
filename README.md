@@ -16,10 +16,8 @@
 --------
 
 #### Intro<a id="id-intro"></a>
-The API for authentication and authorization provides you the authentication key which enables the use of all the DHL-endpoints that are secured.
 
-The DHL APIs implements the JWT for secure authentication and authorization. This JWT token is to be provided in the Authorization header using the bearer scheme.
-In the  [API docs ](https://api-gw.dhlparcel.nl/docs/#/) a lock <span>&#x1F512;</span> is showen on the right hand side of the endpoint to identify a secured endpoint.
+The DHL API's implements the JWT for secure authentication and authorization. This JWT token is to be provided in the Authorization header using the bearer scheme. This token is necessary for all DHL secured endpoints. These secured API's are identified by a lock <span>&#x1F512;</span> in the [API docs ](https://api-gw.dhlparcel.nl/docs/#/) on the right hand side of the endpoint.
 
 The api-gateway checks performs the following checks on the token for secured services:
 
