@@ -50,19 +50,17 @@ The validity of the access token is about 15 minutes so with the refresh token t
 
 Example of response body (200):
 The yellow shaded text is the token to be used in the HTTP header for authentication.
-```
 {
   "accessToken": "
 ```diff
 - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwOGZkMTRhMC05YWYzLTRkZDMtODU3YS1hNzUyYWY3ZjUyYTciLCJzdWIiOiI2YmZjNzU2MS00YjQxLTRjYjctYTFjMy1kYzMxZmFmODYwZGIiLCJvcmdhbml6YXRpb25JZCI6ImE0MDkzM2RlLWJkMTctNDk0NC1iN2U5LTIzZmM3ZWU5YzgzNSIsIm5iZiI6MTUxMDMyNDMxNSwiZXhwIjoxNTEwMzI1MjE2LCJyb2xlcyI6WyJsYWJlbC1zZXJ2aWNlLkIyWCIsInBpY2t1cC1zZXJ2aWNlLkIyWCJdLCJhY2NvdW50cyI6WyIwODUwMDAwMSJdfQ.D9Zf0hnDXhPXoWar42wzSiZHRKLBYriyKQyj1zERrBw
-
 ```
 ",<br />
   "accessTokenExpiration": 1510325216,<br />
   "refreshToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMWQ5MDMyMi04YmRiLTQ1NjQtOTMxMy04OTg5NThmMzgwNDQiLCJzdWIiOiI2YmZjNzU2MS00YjQxLTRjYjctYTFjMy1kYzMxZmFmODYwZGIiLCJvcmdhbml6YXRpb25JZCI6ImE0MDkzM2RlLWJkMTctNDk0NC1iN2U5LTIzZmM3ZWU5YzgzNSIsIm5iZiI6MTUxMDMyNDMxNSwiZXhwIjoxNTEwOTI5MTE2LCJyb2xlcyI6WyJhdXRoLXNlcnZpY2UuUkVGUkVTSCJdLCJhY2NvdW50cyI6WyIwODUwMDAwMSJdfQ.fi7hn6u3mFwcJ4AG8cYEh8OJFm2NDwOt407aP7sENSo",<br />
   "refreshTokenExpiration": 1510929116
 }
-```
+
 #### 2 Environment and testing<a id="id-env-tst"></a>
 
 #### 2.1 Enviroments <a id="id-env"></a>
