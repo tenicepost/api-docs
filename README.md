@@ -1,5 +1,5 @@
 ## API Authentication and authorization
-___
+--------
 #### [Intro](#id-intro)
 
 [Pre conditions](#id-pre)
