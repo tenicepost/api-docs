@@ -4,7 +4,7 @@ ___
 
 [Pre conditions](#id-pre)
 
-1. [Steps](#id-steps)
+1. [Steps](#id-steps)<br />
   1.1.  [Get your user-id and key](#id-steps1)
   1.2.  [Get your authorisation token](#id-steps2)
 2.  [Environment and testing](#id-env)
