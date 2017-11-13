@@ -35,9 +35,7 @@ The api-gateway checks performs the following checks on the token for secured se
 
 ##### 1.1 Get your user-id and key <a id="id-steps1"></a>
 
-To get an authentication token, you will need the user_id and user key for your application, these unique values can be generated on the  [My DHL-Parcel Application page](https://my.dhlparcel.nl).
-
-User-id and key are generated in the DHL-Parcel application by selecting 'Settings' in the user dropdown menu and clicking on the button 'CREATE API KEY' in the tab 'API KEYS'.
+To get an authentication token, you will need the user_id and user key for your application. These unique values can be generated under the user account on the  [My DHL-Parcel Application page](https://my.dhlparcel.nl). By selecting 'Settings' in the the user dropdown menu and clicking on the button 'CREATE API KEY' in the tab 'API KEYS' the information is generated. Store this since it will only be given out once, pressing the button again will result in a new user-id and key.
 
 ![](./images/instellingen.jpg)
 
