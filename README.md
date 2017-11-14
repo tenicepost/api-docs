@@ -33,7 +33,7 @@ The api-gateway checks performs the following checks on the token for secured se
 
 ##### 1.1 Get your user-id and key <a id="id-steps1"></a>
 
-To get an authentication token, you will need the user_id and user key for your application. These unique values can be generated under the user account on the  [My DHL-Parcel Application page](https://my.dhlparcel.nl). By selecting 'Settings' in the the user dropdown menu and clicking on the button 'CREATE API KEY' in the tab 'API KEYS' the information is generated. Store this since it will only be given out once, pressing the button again will result in a new user-id and key.
+To get an authentication token, you will need the user_id and user key for your application. These unique values can be generated under the user account on the  [My DHL-Parcel Application page](https://my.dhlparcel.nl). By selecting 'Settings' in the the user dropdown menu and clicking on the button 'CREATE API KEY' in the tab 'API KEYS' the information is generated. Store this information since it will only be given out once and pressing the button again will result in a new user-id and key.
 
 ![](./images/instellingen.jpg)
 
@@ -45,10 +45,10 @@ When 'CREATE API KEY' is pressed the user id and key will be generated.
 
 The user-id and key are used to make the initial call to the [API key](https://api-gw.dhlparcel.nl/authenticate/api-key) endpoint. As a reponse the API gives an access token and a refresh token.
 
-The validity of the access token is about 15 minutes so with the refresh token the session can be prolonged for another 15 minutes using the [refresh API](https://api-gw.dhlparcel.nl/authenticate/refresh-token). The reponse is the same as the initial call for the API key, an access and refresh token.
+The validity of the access token is about 15 minutes so with the refresh token the validity can be prolonged for another 15 minutes using the [refresh API](https://api-gw.dhlparcel.nl/authenticate/refresh-token). The reponse of the refresh token API is the same as the initial call for the API key, also an access and refresh token.
 
 Example of response body (200):
-The yellow shaded text is the token to be used in the HTTP header for authentication.
+The red text is the token to be used in the HTTP header for authentication.
 {
   "accessToken": "
 ```diff
