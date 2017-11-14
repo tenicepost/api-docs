@@ -48,7 +48,7 @@ The user-id and key are used to make the initial call to the [API key](https://a
 The validity of the access token is about 15 minutes so with the refresh token the validity can be prolonged for another 15 minutes using the [refresh API](https://api-gw.dhlparcel.nl/authenticate/refresh-token). The reponse of the refresh token API is the same as the initial call for the API key, also an access and refresh token.
 
 Example of response body (200):
-The red text is the token to be used in the HTTP header for authentication.
+The red text is the token to be used in the HTTP header for authentication. <br />
 {
   "accessToken": "
 ```diff
